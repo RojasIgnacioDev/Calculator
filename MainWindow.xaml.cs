@@ -16,17 +16,28 @@ namespace Calculator;
 /// </summary>
 public partial class MainWindow : Window {
 
-    string TextDisplay { get; set; } = "0";
+    const string EmptyTextDisplay = "0";
+
+    string DisplayContent = "";
+
+    decimal FirstNumberInput = 0m;
+    decimal SecondNumberInput = 0m;
+
     
     public MainWindow() {
         InitializeComponent();
+
+        ResultDisplay.Text = EmptyTextDisplay;
+
         Console.Beep();
     }
 
-   
+    // adds to the display the content of the button
     private void ChangeDisplayContent(Button buttonToGatherContent) {
         var newText = buttonToGatherContent.Content?.ToString();
-        ResultDisplay.Text += newText;
+
+        DisplayContent += buttonToGatherContent.Content?.ToString();
+        ResultDisplay.Text = DisplayContent;
     }
 
 }

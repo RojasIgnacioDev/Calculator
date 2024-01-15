@@ -12,7 +12,8 @@ public partial class MainWindow : Window {
 
     // handle the numbers buttons
     private void NumberOneButton_Click(object sender, RoutedEventArgs e) {
-        
+        this.ChangeDisplayContent(NumberOneButton);
+
     }
 
     private void NumberTwoButton_Click(object sender, RoutedEventArgs e) {

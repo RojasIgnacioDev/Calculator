@@ -50,9 +50,7 @@
                    Style="{StaticResource CommonTextStyle}"
                    HorizontalAlignment="Right"
                    VerticalAlignment="Center"
-                   Margin="0,0,50,0"
-                   >
-            0
+                   Margin="0,0,50,0">
         </TextBlock>
         
         <!-- number buttons -->
