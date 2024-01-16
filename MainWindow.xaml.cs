@@ -16,6 +16,11 @@ namespace Calculator;
 /// </summary>
 public partial class MainWindow : Window {
 
+    const char AdditionCharacter = '+';
+    const char SubstractionCharacter = '-';
+    const char MultiplicationCharacter = '*';
+    const char DivisionCharacter = '/';
+
     const string EmptyTextDisplay = "0";
 
     string DisplayContent = "";
@@ -43,11 +48,18 @@ public partial class MainWindow : Window {
 
     // TODO: when the result display is like "12+34"
     // take a string and convert it to a number before and after the plus operator 
-    private void GetNumberInput() {
-        string displayText = ResultDisplay.Text;
-        int firstNumber;
+    private void PerformOperation() {
+        string displayText = DisplayContent;
+        string exceptionMessage = "Trying to obtain numbers input with an empty display content.";
+        
+        int firstNumberString;
+        int secondNumberString;
+        
+        // chech if the content is not null
+        if (string.IsNullOrEmpty(displayText)) throw new Exception(exceptionMessage);
+        // check 
 
-        if (!Int32.TryParse(displayText, out firstNumber)) return;
-        FirstNumberInput = firstNumber;
+
+
     }
 }
