@@ -10,19 +10,19 @@ namespace Calculator;
 public partial class MainWindow : Window {
 
     private void AdditionButton_Click(object sender, RoutedEventArgs e) {
-
+        this.ChangeDisplayContent(AdditionButton);
     }
 
     private void SubstractionButton_Click(object sender, RoutedEventArgs e) {
-
+        this.ChangeDisplayContent(SubstractionButton);
     }
 
     private void MultiplicationButton_Click(object sender, RoutedEventArgs e) {
-
+        this.ChangeDisplayContent(MultiplicationButton);
     }
 
     private void DivisionButton_Click(object sender, RoutedEventArgs e) {
-
+        this.ChangeDisplayContent(DivisionButton);
     }
 
 }

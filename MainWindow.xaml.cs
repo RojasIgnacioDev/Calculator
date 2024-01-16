@@ -40,4 +40,14 @@ public partial class MainWindow : Window {
         ResultDisplay.Text = DisplayContent;
     }
 
+
+    // TODO: when the result display is like "12+34"
+    // take a string and convert it to a number before and after the plus operator 
+    private void GetNumberInput() {
+        string displayText = ResultDisplay.Text;
+        int firstNumber;
+
+        if (!Int32.TryParse(displayText, out firstNumber)) return;
+        FirstNumberInput = firstNumber;
+    }
 }
