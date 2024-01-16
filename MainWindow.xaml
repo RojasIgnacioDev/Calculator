@@ -12,18 +12,20 @@
         <Style x:Key="CommonButtonStyle" TargetType="Button">
             <Setter Property="FontSize" Value="54"/>
             <Setter Property="Margin" Value="2,2,2,2"/>
+            <Setter Property="Background" Value="SlateGray"/>
             <!-- add more properties -->
         </Style>
         
         <!-- style for the display-->
         <Style x:Key="CommonTextStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="48"/>
+            <Setter Property="Background" Value="SlateGray"/>
         </Style>
 
     </Window.Resources>
        
   
-    <Grid>
+    <Grid Background="DarkGray">
 
         <Grid.ColumnDefinitions>
 
