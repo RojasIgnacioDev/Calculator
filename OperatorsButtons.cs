@@ -10,6 +10,7 @@ namespace Calculator;
 public partial class MainWindow : Window {
 
     private void AdditionButton_Click(object sender, RoutedEventArgs e) {
+        if (ResultDisplay.Text.ToString()) 
         this.ChangeDisplayContent(AdditionButton);
     }
 
